@@ -1,0 +1,27 @@
+{
+  "name": "tuber-example",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "https://github.com/GTDev87/tuber-example",
+  "repository": "GTDev87/tuber-example",
+  "author": "Gregory Thompson",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [],
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  },
+  "dependencies": {
+    "tuber-client": "0.0.12",
+    "tuber-deploy": "0.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gulp",
+    "debug-test": "node debug node_modules/gulp/bin/gulp.js test"
+  },
+  "license": "MIT"
+}

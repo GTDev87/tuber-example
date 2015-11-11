@@ -1,0 +1,14 @@
+{
+  "name": "macstack-example",
+  "description": "",
+  "version": "0.0.0",
+  "author": "Gregory Thompson",
+  "engines": {
+    "node": "0.12.x",
+    "npm": "1.4.x"
+  },
+  "dependencies": {
+    "macstack": "0.0.10"
+  },
+  "devDependencies": {}
+}
