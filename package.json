@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "tuber-client": "0.0.12",
-    "tuber-deploy": "0.0.12"
+    "tuber-deploy": "0.0.13"
   },
   "devDependencies": {},
   "scripts": {
