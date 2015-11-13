@@ -1,1 +1,0 @@
-# macstack-example
