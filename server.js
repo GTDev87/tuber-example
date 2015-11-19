@@ -10,7 +10,7 @@ var machine2Location = {ip: "104.236.220.59", port: 8461};
 
 function server1Controller (macstackApp){
   macstackApp.addRoute("/", function (req, res, data){
-    res.json({data: data});
+    res.json({data: data.data});
   });
   macstackApp.run();
 }
@@ -20,18 +20,16 @@ function server2Controller (macstackApp){
     // var tuberClient = require("tuber-client");
 
     // tuberClient.createConnection(privLocation, data.mac, data.mach1Loc, function (err, response, body) {
-      res.json({data: data, foo: data.foo + " ALSO HELLO WORLD!!!!"});
+      res.json({data: data.data});
     // });
   });
 
   macstackApp.run();
 }
 
-// console.log(server2Controller.toString());
 
 tuberMacstack.deployController(machine1Location, null, privLocation, {hello: "world"}, server1Controller, function (server1MacaroonSerialized) {
-
-  var nextData = {foo: "bar", mach1Loc: machine1Location, mac: server1MacaroonSerialized};
+  var nextData = {foo: "bar"};
   //when passing macaroon "server1MacaroonSerialized"
   
   //need to finish adding the request portion
